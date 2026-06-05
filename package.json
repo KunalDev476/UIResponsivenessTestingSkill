@@ -1,0 +1,14 @@
+{
+  "name": "ui-responsive-qa",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test:ui-responsive": "playwright test tests/ui-responsive/inscopix-casestudy.spec.ts --workers=1",
+    "test:ui-responsive:headed": "playwright test tests/ui-responsive/inscopix-casestudy.spec.ts --headed --workers=1",
+    "test:ui-responsive:ui": "playwright test tests/ui-responsive/inscopix-casestudy.spec.ts --ui --workers=1",
+    "test:ui-responsive:debug": "playwright test tests/ui-responsive/inscopix-casestudy.spec.ts --debug"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0"
+  }
+}
