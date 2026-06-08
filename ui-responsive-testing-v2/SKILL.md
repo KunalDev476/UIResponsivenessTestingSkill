@@ -101,7 +101,7 @@ Use `playwright test [spec] --list` only as a non-executing parse/list check.
 
 ### 4. Monitor Handoff
 
-After spec generation or update, spawn or reuse `qa-visual-review-monitor` from `.codex/agents/qa-visual-review-monitor.toml`.
+After spec generation or update, spawn or reuse `qa-visual-review-monitor` from `agents/qa-visual-review-monitor.toml`.
 
 Use this instruction:
 

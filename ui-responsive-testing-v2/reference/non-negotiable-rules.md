@@ -87,7 +87,7 @@ Exclude header, nav, footer, mobile-menu, and all descendants. Main-content CTAs
 
 When generating or updating specs under `tests/ui-responsive/`:
 
-1. Read `.agents/skills/ui-responsive-testing-v2/SKILL.md` and linked `reference/` files.
+1. Read `ui-responsive-testing-v2/SKILL.md` and linked `reference/` files.
 2. Live inventory the URL; do not invent page facts.
 3. Generate exactly six grouped tests: runtime health, links, CTAs, sections, media, and layout integrity.
 4. Inline all helpers; use `templates/playwright-spec-skeleton.ts` structure.

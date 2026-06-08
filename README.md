@@ -28,11 +28,11 @@ test-results/
 ## Repository Layout
 
 ```text
-.agents/skills/ui-responsive-testing-v2/       # Main skill
-.agents/skills/ui-responsive-testing-v2/SKILL.md
-.agents/skills/ui-responsive-testing-v2/reference/
-.agents/skills/ui-responsive-testing-v2/templates/
-.codex/agents/qa-visual-review-monitor.toml    # Screenshot review monitor agent
+ui-responsive-testing-v2/                      # Main skill
+ui-responsive-testing-v2/SKILL.md
+ui-responsive-testing-v2/reference/
+ui-responsive-testing-v2/templates/
+ui-responsive-testing-v2/agents/qa-visual-review-monitor.toml
 tests/ui-responsive/                           # Generated specs and run config
 playwright.config.ts                           # Playwright config
 package.json                                   # Playwright dependency and scripts
@@ -77,7 +77,7 @@ npx playwright install --with-deps chromium
 This skill also hands off screenshot review to the `qa-visual-review-monitor` agent defined here:
 
 ```text
-.codex/agents/qa-visual-review-monitor.toml
+ui-responsive-testing-v2/agents/qa-visual-review-monitor.toml
 ```
 
 How it works:
@@ -91,7 +91,7 @@ How it works:
 Manual monitor prompt:
 
 ```text
-Use the qa-visual-review-monitor subagent defined in .codex/agents/qa-visual-review-monitor.toml to process pending AI review hooks.
+Use the qa-visual-review-monitor subagent defined in ui-responsive-testing-v2/agents/qa-visual-review-monitor.toml to process pending AI review hooks.
 ```
 
 ## Codex Usage Prompt
@@ -103,13 +103,13 @@ Use ui-responsive-testing-v2 for https://example.com/case-study/.
 ## Claude Usage Prompt
 
 ```text
-Read .agents/skills/ui-responsive-testing-v2/SKILL.md and follow it exactly to test https://example.com/case-study/.
+Read ui-responsive-testing-v2/SKILL.md and follow it exactly to test https://example.com/case-study/.
 ```
 
 ## Cursor Usage Prompt
 
 ```text
-Read .agents/skills/ui-responsive-testing-v2/SKILL.md and follow it exactly to test https://example.com/case-study/.
+Read ui-responsive-testing-v2/SKILL.md and follow it exactly to test https://example.com/case-study/.
 ```
 
 ## Running Test Cases

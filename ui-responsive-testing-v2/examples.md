@@ -24,5 +24,5 @@ Use the qa-visual-review-monitor subagent to process pending AI review hooks. Pe
 If a previous spelling review missed issues:
 
 ```
-Use the qa-visual-review-monitor subagent defined in .codex/agents/qa-visual-review-monitor.toml. A previous AI review exists, but the user reports it missed spelling mistakes. Perform a strict supplemental spelling audit, not a normal first-pass review. Append only Supplemental Spelling Audit, Supplemental UI Suggestions, and Supplemental AI Review Completion Note at the bottom of test-result.md.
+Use the qa-visual-review-monitor subagent defined in agents/qa-visual-review-monitor.toml. A previous AI review exists, but the user reports it missed spelling mistakes. Perform a strict supplemental spelling audit, not a normal first-pass review. Append only Supplemental Spelling Audit, Supplemental UI Suggestions, and Supplemental AI Review Completion Note at the bottom of test-result.md.
 ```

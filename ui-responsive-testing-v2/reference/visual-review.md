@@ -1,6 +1,6 @@
 # AI Visual Review (v2)
 
-Delegated to **`qa-visual-review-monitor`** subagent (`.codex/agents/qa-visual-review-monitor.toml`).
+Delegated to **`qa-visual-review-monitor`** subagent (`agents/qa-visual-review-monitor.toml`).
 
 ## Parent agent after spec generation
 
@@ -45,7 +45,7 @@ Perform a strict spelling audit. Do not rely on any previous Spelling Check sect
 Use this exact shape when the user reports that a prior spelling review missed issues:
 
 ```text
-Use the qa-visual-review-monitor subagent defined in .codex/agents/qa-visual-review-monitor.toml. A previous AI review exists, but the user reports it missed spelling mistakes. Perform a strict supplemental spelling audit, not a normal first-pass review.
+Use the qa-visual-review-monitor subagent defined in agents/qa-visual-review-monitor.toml. A previous AI review exists, but the user reports it missed spelling mistakes. Perform a strict supplemental spelling audit, not a normal first-pass review.
 
 Workspace: [absolute workspace path]
 Result file: test-results/[page-slug]/test-result.md
