@@ -1,7 +1,0 @@
-interface:
-  display_name: "UI Responsive Testing v2"
-  short_description: "Generate focused Playwright responsive UI QA specs."
-  default_prompt: "Use ui-responsive-testing-v2 for the target URL."
-
-policy:
-  allow_implicit_invocation: false

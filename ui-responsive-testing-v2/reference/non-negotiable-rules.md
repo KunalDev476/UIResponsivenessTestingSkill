@@ -1,6 +1,6 @@
 # Non-Negotiable Rules
 
-These rules replace the legacy `.codex/rules/ui-responsive-v2-*.mdc` workflow files. They are skill reference material, not Codex command execution policy.
+These rules replace the legacy responsive QA workflow files. They are skill reference material, not command execution policy.
 
 ## Scroll Into Viewport
 

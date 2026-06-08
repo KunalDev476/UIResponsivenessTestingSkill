@@ -67,7 +67,7 @@ console.log(`[QA_SCREENSHOTS_READY] test-results/${PAGE_SLUG}/screenshots/ (...)
 console.log(`[QA_AI_ANALYSIS_READY] ${JSON.stringify({ pageSlug, viewport, screenshotDir, slices, resultFile, reviewStatus: 'pending-ai-review', contentZone: { headerHeight, bottomBarHeight } })}`);
 ```
 
-Monitor subagent watches **file hooks** (`pending-ai-review` in md), updates processed hooks to `ai-review-completed`, and stdout is optional.
+Monitor agent watches **file hooks** (`pending-ai-review` in md), updates processed hooks to `ai-review-completed`, and stdout is optional.
 
 ## qa-run-config.json
 

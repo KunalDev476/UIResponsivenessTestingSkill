@@ -1,10 +1,10 @@
 # UI Responsive Testing Skill
 
-This repository contains `ui-responsive-testing-v2`, a Codex-style skill for generating repeatable Playwright responsive UI QA specs.
+This repository contains `ui-responsive-testing-v2`, an agent skill for generating repeatable Playwright responsive UI QA specs.
 
-The skill was created for Codex because Codex tends to follow file-backed instructions more literally. That matters for this workflow: responsive QA should not depend on broad generative thinking or a different test plan each run. It should keep the same six-test matrix, the same file locations, the same screenshot hooks, and the same review handoff behavior so results are more consistent.
+The workflow is intentionally file-backed and literal. Responsive QA should not depend on broad generative thinking or a different test plan each run. It should keep the same six-test matrix, the same file locations, the same screenshot hooks, and the same review handoff behavior so results are more consistent.
 
-The skill follows the Codex skill structure from the Codex docs. It is intended to work best in Codex, and the same instruction files can also be used manually with Cursor or Claude. Cross-agent behavior is still not formally validated, so treat Claude and Cursor usage as compatible but not yet fully tested.
+The skill follows the common `SKILL.md` agent skill structure used by the skills ecosystem. It is designed to be usable with Claude, Cursor, and Codex through the prompts below. Cross-agent behavior should still be validated in your own environment because each agent loads and follows skills differently.
 
 ## What This Skill Does
 
@@ -91,7 +91,7 @@ How it works:
 Manual monitor prompt:
 
 ```text
-Use the qa-visual-review-monitor subagent defined in ui-responsive-testing-v2/agents/qa-visual-review-monitor.toml to process pending AI review hooks.
+Use the qa-visual-review-monitor monitor agent defined in ui-responsive-testing-v2/agents/qa-visual-review-monitor.toml to process pending AI review hooks.
 ```
 
 ## Codex Usage Prompt

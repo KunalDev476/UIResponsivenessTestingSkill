@@ -106,7 +106,7 @@ After spec generation or update, spawn or reuse `qa-visual-review-monitor` from 
 Use this instruction:
 
 ```text
-Use the qa-visual-review-monitor subagent to watch test-results/ for pending-ai-review hooks. Perform a strict spelling audit. Do not rely on any previous Spelling Check section. Read every screenshot slice in order, then do a second word/token pass for small copy, cards, pills, buttons, repeated boundary text, missing spaces, merged words, odd capitalization, transpositions, and near-word errors. Report every confirmed typo with all visible slice names. After appending review sections for a viewport, update that processed hook row from pending-ai-review to ai-review-completed; do not rewrite any other hook rows or prior review sections.
+Use the qa-visual-review-monitor monitor agent to watch test-results/ for pending-ai-review hooks. Perform a strict spelling audit. Do not rely on any previous Spelling Check section. Read every screenshot slice in order, then do a second word/token pass for small copy, cards, pills, buttons, repeated boundary text, missing spaces, merged words, odd capitalization, transpositions, and near-word errors. Report every confirmed typo with all visible slice names. After appending review sections for a viewport, update that processed hook row from pending-ai-review to ai-review-completed; do not rewrite any other hook rows or prior review sections.
 ```
 
 ## Completion Output
