@@ -1,11 +1,11 @@
 # Examples
 
 ```
-Use ui-responsive-testing-v2 for https://example.com/case-study/
+Use ui-responsive-testing-skill for https://example.com/case-study/
 ```
 
 ```
-Use ui-responsive-testing-v2 to generate desktop and mobile tests for https://example.com/about/
+Use ui-responsive-testing-skill to generate desktop and mobile tests for https://example.com/about/
 ```
 
 After generation:

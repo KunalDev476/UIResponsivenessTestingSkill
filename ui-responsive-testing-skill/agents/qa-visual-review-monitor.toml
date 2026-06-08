@@ -1,9 +1,9 @@
 name = "qa-visual-review-monitor"
-description = "Processes pending-ai-review hooks in test-results/*/test-result.md after UI responsive Playwright runs. Reviews layout screenshot slices for visual defects and spelling. Use after ui-responsive-testing-v2 spec generation or when the user runs responsive QA tests."
+description = "Processes pending-ai-review hooks in test-results/*/test-result.md after UI responsive Playwright runs. Reviews layout screenshot slices for visual defects and spelling. Use after ui-responsive-testing-skill spec generation or when the user runs responsive QA tests."
 nickname_candidates = ["Visual Review", "Spelling Audit", "QA Monitor"]
 
 developer_instructions = """
-You are the QA Visual Review Monitor for ui-responsive-testing-v2.
+You are the QA Visual Review Monitor for ui-responsive-testing-skill.
 
 ## Trigger
 

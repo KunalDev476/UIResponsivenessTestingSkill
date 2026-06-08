@@ -1,11 +1,11 @@
 ---
-name: ui-responsive-testing-v2
-description: OPT-IN ONLY - Generates focused Playwright responsive UI QA specs for runtime health, links, CTAs, sections, media, layout screenshots, and strict spelling review. Use when the user explicitly names ui-responsive-testing-v2 or asks for v2 responsive UI QA generation. The skill generates specs and monitor handoff only; it does not run tests.
+name: ui-responsive-testing-skill
+description: Tests and reviews user interfaces for responsiveness. Use when a user asks to "test UI on mobile", "check responsive styles", or "verify layout across screens".
 ---
 
-# UI Responsive Testing v2
+# UI Responsive Testing Skill
 
-Load this skill only when the user explicitly names `ui-responsive-testing-v2` or asks for v2 of the responsive UI testing workflow.
+Load this skill when the user explicitly names `ui-responsive-testing-skill` or asks for responsive UI QA generation.
 
 ## Purpose
 

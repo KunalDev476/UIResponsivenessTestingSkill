@@ -1,5 +1,5 @@
 /**
- * Reference skeleton for ui-responsive-testing-v2 spec generation.
+ * Reference skeleton for ui-responsive-testing-skill spec generation.
  * Copy into tests/ui-responsive/[page-slug].spec.ts and fill PAGE_* constants.
  */
 import { test, Page, Locator } from '@playwright/test';

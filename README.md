@@ -1,6 +1,6 @@
 # UI Responsive Testing Skill
 
-This repository contains `ui-responsive-testing-v2`, an agent skill for generating repeatable Playwright responsive UI QA specs.
+This repository contains `ui-responsive-testing-skill`, an agent skill for generating repeatable Playwright responsive UI QA specs.
 
 The workflow is intentionally file-backed and literal. Responsive QA should not depend on broad generative thinking or a different test plan each run. It should keep the same six-test matrix, the same file locations, the same screenshot hooks, and the same review handoff behavior so results are more consistent.
 
@@ -25,14 +25,24 @@ Generated output is written to:
 test-results/
 ```
 
+## Install With Skills CLI
+
+Because this repository uses a root-level skill subfolder, install the skill by passing the skill name explicitly:
+
+```bash
+npx skills add KunalDev476/UIResponsivenessTestingSkill --skill ui-responsive-testing-skill
+```
+
+The skill folder is `ui-responsive-testing-skill`, and the `name` field in `SKILL.md` matches that folder name. After the first install, the skills registry can index the repository and make the skill visible on skills.sh after its automated checks complete.
+
 ## Repository Layout
 
 ```text
-ui-responsive-testing-v2/                      # Main skill
-ui-responsive-testing-v2/SKILL.md
-ui-responsive-testing-v2/reference/
-ui-responsive-testing-v2/templates/
-ui-responsive-testing-v2/agents/qa-visual-review-monitor.toml
+ui-responsive-testing-skill/                   # Main skill
+ui-responsive-testing-skill/SKILL.md
+ui-responsive-testing-skill/reference/
+ui-responsive-testing-skill/templates/
+ui-responsive-testing-skill/agents/qa-visual-review-monitor.toml
 tests/ui-responsive/                           # Generated specs and run config
 playwright.config.ts                           # Playwright config
 package.json                                   # Playwright dependency and scripts
@@ -77,7 +87,7 @@ npx playwright install --with-deps chromium
 This skill also hands off screenshot review to the `qa-visual-review-monitor` agent defined here:
 
 ```text
-ui-responsive-testing-v2/agents/qa-visual-review-monitor.toml
+ui-responsive-testing-skill/agents/qa-visual-review-monitor.toml
 ```
 
 How it works:
@@ -91,25 +101,25 @@ How it works:
 Manual monitor prompt:
 
 ```text
-Use the qa-visual-review-monitor monitor agent defined in ui-responsive-testing-v2/agents/qa-visual-review-monitor.toml to process pending AI review hooks.
+Use the qa-visual-review-monitor monitor agent defined in ui-responsive-testing-skill/agents/qa-visual-review-monitor.toml to process pending AI review hooks.
 ```
 
 ## Codex Usage Prompt
 
 ```text
-Use ui-responsive-testing-v2 for https://example.com/case-study/. 
+Use ui-responsive-testing-skill for https://example.com/case-study/.
 ```
 
 ## Claude Usage Prompt
 
 ```text
-Read ui-responsive-testing-v2/SKILL.md and follow it exactly to test https://example.com/case-study/.
+Read ui-responsive-testing-skill/SKILL.md and follow it exactly to test https://example.com/case-study/.
 ```
 
 ## Cursor Usage Prompt
 
 ```text
-Read ui-responsive-testing-v2/SKILL.md and follow it exactly to test https://example.com/case-study/.
+Read ui-responsive-testing-skill/SKILL.md and follow it exactly to test https://example.com/case-study/.
 ```
 
 ## Running Test Cases
